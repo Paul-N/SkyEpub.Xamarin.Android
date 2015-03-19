@@ -1,0 +1,258 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr path="/api/package[@name='com.skytree.epub']" name="managedName">Skytree.Epub</attr>
+
+  <!-- Fixing inheritance -->
+  
+  <attr path="/api/package[@name='com.skytree.epub']/class[@name='FixedControl' and @extends='com.skytree.epub.ae']" name="extends">android.widget.RelativeLayout</attr>
+  <attr path="/api/package[@name='com.skytree.epub']/class[@name='ReflowableControl' and @extends='com.skytree.epub.ce']" name="extends">android.widget.RelativeLayout</attr>
+  <!--<attr path="/api/package[@name='com.skytree.epub']/class[@name='ReflowableControl' and @extends='com.skytree.epub.ce']" name="implements">android.view.GestureDetector.OnGestureListener</attr>-->
+  <!--<add-node path="/api/package[@name='com.skytree.epub']/class[@name='ReflowableControl'][implements[@name='android.view.GestureDetector.OnGestureListener']]" />-->
+  <attr path="/api/package[@name='com.skytree.epub']/class[@name='Parallel' and @extends='com.skytree.epub.bz']" name="extends">java.lang.Object</attr>
+
+  <!--ReflowableControl-->
+  <!--<attr path="/api/package[@name='com.skytree.epub']/class[@name='ce']" name="obfuscated">false</attr> 
+  <attr path="/api/package[@name='com.skytree.epub']/interface[@name='ca']" name="obfuscated">false</attr> 
+  <attr path="/api/package[@name='com.skytree.epub']/interface[@name='gz']" name="obfuscated">false</attr> 
+  <attr path="/api/package[@name='com.skytree.epub']/interface[@name='k']" name="obfuscated">false</attr>--> 
+  
+  <!--Parallel-->
+  <!--<attr path="/api/package[@name='com.skytree.epub']/class[@name='bz']" name="obfuscated">false</attr>--> 
+  
+  <!--FixedControl-->
+  <!--<attr path="/api/package[@name='com.skytree.epub']/class[@name='ae']" name="obfuscated">false</attr>--> <!--ca, k-->
+
+  <!--<remove-node path="/api/package[@name='com.skytree.epub']/class[@name='ae']/method[@name='setContentListener']" />
+  <remove-node path="/api/package[@name='com.skytree.epub']/class[@name='ae']/method[@name='setContentListenerForCache']" />-->
+  
+  
+<!--<attr path="/api/package[@name='com.skytree.epub']/class[@name='a']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='b']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='c']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='d']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='e']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='f']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='g']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='h']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='i']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='j']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/interface[@name='k']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='l']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='m']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='n']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='o']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='p']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='q']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/interface[@name='r']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='s']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/interface[@name='t']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='u']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/interface[@name='v']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='w']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='x']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='y']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='z']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='aa']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ab']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ac']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ad']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ae']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='af']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ag']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ah']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ai']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='aj']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ak']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='al']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='am']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='an']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ao']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ap']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='aq']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ar']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='as']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='at']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='au']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='av']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='aw']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ax']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ay']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='az']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ba']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bb']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bc']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bd']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='be']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bf']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bg']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bh']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bi']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bj']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bk']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bl']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bm']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bn']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bo']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bp']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bq']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='br']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bs']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bt']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bu']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bv']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bw']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bx']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='by']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='bz']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/interface[@name='ca']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cb']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cc']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cd']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ce']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cf']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cg']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ch']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ci']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cj']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ck']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cl']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cm']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cn']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='co']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cp']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cq']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cr']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cs']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ct']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cu']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cv']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cw']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cx']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cy']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='cz']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='da']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='db']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dc']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dd']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='de']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='df']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dg']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dh']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='di']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dj']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dk']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dl']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dm']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dn']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='do']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dp']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dq']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dr']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ds']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dt']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='du']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dv']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dw']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dx']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dy']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='dz']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ea']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='eb']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ec']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ed']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ee']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ef']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='eg']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='eh']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ei']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ej']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ek']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='el']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='em']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='en']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='eo']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ep']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='eq']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='er']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='es']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='et']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='eu']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ev']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ew']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ex']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ey']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ez']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fa']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fb']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fc']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fd']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fe']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ff']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fg']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fh']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fi']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fj']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fk']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fl']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fm']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fn']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fo']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fp']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fq']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fr']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fs']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ft']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fu']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fv']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fw']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fx']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fy']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='fz']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ga']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gb']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gc']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gd']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ge']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gf']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gg']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gh']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gi']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gj']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gk']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gl']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gm']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gn']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='go']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gp']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gq']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gr']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gs']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gt']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gu']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gv']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gw']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gx']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='gy']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/interface[@name='gz']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='ha']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='hb']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='hc']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='hd']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='he']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='hf']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='hg']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='hh']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='hi']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='hj']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='hk']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/interface[@name='hl']" name="obfuscated">false</attr> 
+<attr path="/api/package[@name='com.skytree.epub']/class[@name='hm']" name="obfuscated">false</attr>--> 
+
+
+</metadata>
